@@ -367,6 +367,7 @@ footer {
   color: #ffffff;
   text-decoration: none;
 }
+
 @media only screen and (max-width: 992px) {
   .content{
     flex-direction: column;
@@ -387,3 +388,4 @@ footer {
     padding: 15px; 
   }
 }
+
