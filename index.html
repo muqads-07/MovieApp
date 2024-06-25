@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Search App</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonts and libraries -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <main>
+    <nav>
+        <div class="navbar">
+            <input title="check" type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <div class="nav-mobile w3-animate-right">
+               <ul class="MenuItems">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Genres</a></li>
+                  <li><a href="#">Movies</a></li>
+                  <li><a href="#">TV-Series</a></li>
+               </ul>
+            </div>
+              <div class="nav-logo">
+                <img src="./images/logo.png">
+              </div>
+              <div class="search-container">
+                <form id="search-form" role="search">
+                     <input id="search-input" class="nav-form" type="text" placeholder="Search Movie here">
+                     <button type="submit" class="searchBtn">
+                      <i class="fa fa-search"style="color: rgba(1, 180, 228)"></i>
+                     </button>            
+                  </form>
+              </div>
+          </div>
+    </nav>
+    <section class="hero-section">
+      <header>
+        <div class="hero-image">
+          <div class="hero-content">
+              <h1 class="hero-title">Free Movies to Watch, Anytime Anywhere.</h1>
+              <p class="hero-subtitle">The search is over! Let this site help you find the perfect movie to watch tonight for free.</p>
+              <button id="watch-now-button" class="hero-button">Watch Now</button>
+
+          </div>
+        </div>
+      </header>
+    </section>
+    <section id="movies-section" class="movies-section">
+      <div id="movies-container" class="movies-container"></div>
+    </section>
+    <section>
+    <div id="movie-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="movie-details" class="movie-details"></div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer>
+    <div class="footer">
+        <ul class="socials">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <div class="footer-copyright">
+            <p>Copyright &copy;2024 All rights reserved
+            </p>
+        </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
