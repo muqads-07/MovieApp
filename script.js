@@ -36,7 +36,7 @@ function showMovies(movies) {
     const noResults = document.createElement('div');
     noResults.textContent = 'No movies found.';
     moviesContainer.appendChild(noResults);
-    noResults.style.marginBottom = "22rem";
+    noResults.style.marginBottom = "28rem";
     noResults.style.color = "white";
     noResults.style.fontSize = "24px";
   } else {
