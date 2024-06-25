@@ -14,7 +14,7 @@ const watchNowButton = document.getElementById('watch-now-button');
 
 // Fetch movies from API
 async function getMovies(url) {
-  try {
+  try { //exception handling
     const response = await fetch(url);
     const data = await response.json();
     return data.results;
@@ -70,10 +70,11 @@ async function showModal(movie) {
     const data = await response.json();
     const cast = data.cast.slice(0, 6); 
 
-    const castList = cast.map(actor => `${actor.name}, `).join('');
+    const castList = cast.map(actor => `${actor.name}`).join(', ');
 
     // Modal content
     movieDetails.innerHTML = `
+    <div class="content">
     <div class="left-content">
       <h2>${title}</h2>
       <img src="${IMGPATH + poster_path}" alt="${title}">
@@ -85,6 +86,7 @@ async function showModal(movie) {
       <p>${castList}</p>
       <p><strong>Release Date: </strong>${release_date}</p>
       <p><strong>Rating: </strong>${vote_average}</p>
+    </div>
     </div>
   `;
   
