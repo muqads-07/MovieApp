@@ -369,6 +369,9 @@ footer {
 }
 
 @media only screen and (max-width: 992px) {
+   .content{
+    flex-direction: column;
+  }
   .modal-content {
     max-width: 50%;
     margin-top: 10vh;
