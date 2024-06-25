@@ -367,9 +367,8 @@ footer {
   color: #ffffff;
   text-decoration: none;
 }
-
 @media only screen and (max-width: 992px) {
-   .content{
+  .content{
     flex-direction: column;
   }
   .modal-content {
@@ -381,8 +380,10 @@ footer {
   .left-content,
   .right-content {
     padding: 0; 
+  
+  }
 
   .right-content {
-    padding: 15px;
+    padding: 15px; 
   }
 }
